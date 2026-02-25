@@ -99,7 +99,7 @@ export default function Steps() {
         <Reveal>
           <div className="steps__cta-wrap">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              Quero falar com um advogado
+              Clique aqui para falar com um advogado
             </a>
           </div>
         </Reveal>

@@ -4,7 +4,7 @@ import { RiMessage3Fill } from 'react-icons/ri';
 
 const WHATSAPP_LINK = 'https://api.whatsapp.com/send?phone=5551989247287&text=Ol%C3%A1.%20Gostaria%20de%20aux%C3%ADlio%20jur%C3%ADdico,%20poderia%20me%20ajudar%3F';
 const INSTAGRAM_LINK = 'https://instagram.com/viniciusbezerra.adv';
-const EMAIL = 'viniciusbezerra.adv@gmail.com';
+const EMAIL = 'felipebarcelosadvocacia@hotmail.com';
 
 export default function Contact() {
   return (
@@ -35,7 +35,7 @@ export default function Contact() {
             </span>
             <span className="contact__item-content">
               <strong>WhatsApp</strong>
-              <span>(67) 9 1197-7412</span>
+              <span>(51) 9 8924-7287</span>
             </span>
           </a>
           <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="contact__item">
@@ -44,7 +44,7 @@ export default function Contact() {
             </span>
             <span className="contact__item-content">
               <strong>Instagram</strong>
-              <span>@viniciusbezerra.adv</span>
+              <span>@adv.felipebarcelos</span>
             </span>
           </a>
           <a href={`mailto:${EMAIL}`} className="contact__item">

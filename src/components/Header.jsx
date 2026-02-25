@@ -15,8 +15,9 @@ export default function Header() {
         </a>
         <button
           type="button"
-          className="header__menu-btn"
-          aria-label="Abrir menu"
+          className={`header__menu-btn ${menuOpen ? 'header__menu-btn--open' : ''}`}
+          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span />
@@ -27,7 +28,6 @@ export default function Header() {
           <a href="#servicos" onClick={() => setMenuOpen(false)}>Serviços</a>
           <a href="#quem-somos" onClick={() => setMenuOpen(false)}>Quem somos</a>
           <a href="#etapas" onClick={() => setMenuOpen(false)}>Como funciona</a>
-          <a href="#depoimentos" onClick={() => setMenuOpen(false)}>Depoimentos</a>
           <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="header__cta">
             Falar no WhatsApp

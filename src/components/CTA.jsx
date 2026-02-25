@@ -13,7 +13,7 @@ export default function CTA() {
           rel="noopener noreferrer"
           className="cta-block__btn"
         >
-          Quero falar com um advogado
+          Clique aqui para falar com um advogado
         </a>
       </div>
     </section>

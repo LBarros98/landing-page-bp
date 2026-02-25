@@ -28,9 +28,9 @@ function App() {
         <Reveal variant="scale">
           <Steps />
         </Reveal>
-        <Reveal variant="fadeIn">
+        {/* <Reveal variant="fadeIn">
           <Depoimentos />
-        </Reveal>
+        </Reveal> */}
         <Reveal variant="fadeLeft">
           <Contact />
         </Reveal>

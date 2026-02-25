@@ -9,14 +9,14 @@ export default function Hero() {
       <div className="hero__inner">
         <h1 className="hero__title">Atuação especializada em revisão de contratos bancários</h1>
         <p className="hero__subtitle">
-        Acredita que está pagando mais juros do que deveria? Converse agora no WhatsApp com um especialista e solicite uma análise do seu caso        </p>
+        Acredita que está pagando mais juros do que deveria? Converse agora no WhatsApp com um especialista e solicite uma análise do seu caso.        </p>
         <a
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="hero__cta"
         >
-          Quero falar com um advogado
+          Clique aqui para falar com um advogado
         </a>
       </div>
     </section>
