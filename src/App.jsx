@@ -16,25 +16,25 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Reveal>
+        <Reveal variant="fadeUp">
           <Services />
         </Reveal>
-        <Reveal>
+        <Reveal variant="fadeLeft">
           <CTA />
         </Reveal>
-        <Reveal>
+        <Reveal variant="fadeRight">
           <About />
         </Reveal>
-        <Reveal>
+        <Reveal variant="scale">
           <Steps />
         </Reveal>
-        <Reveal>
+        <Reveal variant="slideUp">
           <Diferenciais />
         </Reveal>
-        <Reveal>
+        <Reveal variant="fadeIn">
           <Depoimentos />
         </Reveal>
-        <Reveal>
+        <Reveal variant="fadeLeft">
           <Contact />
         </Reveal>
       </main>

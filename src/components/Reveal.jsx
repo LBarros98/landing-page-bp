@@ -7,9 +7,12 @@ const defaultOptions = {
   once: true,
 };
 
-export default function Reveal({ children, stagger, className = '', ...props }) {
+const variants = ['fadeUp', 'fadeLeft', 'fadeRight', 'scale', 'fadeIn', 'slideUp'];
+
+export default function Reveal({ children, stagger, variant = 'fadeUp', className = '', ...props }) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
+  const variantClass = variants.includes(variant) ? `reveal--${variant}` : 'reveal--fadeUp';
 
   useEffect(() => {
     const el = ref.current;
@@ -31,7 +34,7 @@ export default function Reveal({ children, stagger, className = '', ...props }) 
     return (
       <div
         ref={ref}
-        className={`reveal ${staggerClass} ${visibleClass} ${className}`.trim()}
+        className={`reveal ${variantClass} ${staggerClass} ${visibleClass} ${className}`.trim()}
         {...props}
       >
         {childArray.map((child, i) => (
@@ -50,7 +53,7 @@ export default function Reveal({ children, stagger, className = '', ...props }) 
   return (
     <div
       ref={ref}
-      className={`reveal ${staggerClass} ${visibleClass} ${className}`.trim()}
+      className={`reveal ${variantClass} ${staggerClass} ${visibleClass} ${className}`.trim()}
       {...props}
     >
       {children}
