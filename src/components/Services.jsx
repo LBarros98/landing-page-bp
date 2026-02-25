@@ -1,60 +1,27 @@
 import { useState, useEffect, useRef } from 'react';
 import Reveal from './Reveal';
-import { useMediaQuery } from '../hooks/useMediaQuery';
 
 const services = [
   {
-    title: 'Divórcio',
-    description: 'O divórcio dissolve o casamento pelas vias legais. Define a partilha dos bens, pensão alimentícia, guarda, visitação dos filhos, nome de casado e altera o estado civil.',
-    items: ['Litigioso', 'Consensual', 'Cartório'],
+    title: 'Análise de contratos bancários:',
+    description: 'É fundamental revisar contratos bancários assinados nos últimos 10 anos, mesmo que já estejam quitados. Muitas vezes, o consumidor pagou juros acima da média de mercado, tarifas indevidas ou foi vítima de venda casada sem sequer perceber. Com uma análise técnica especializada, é possível identificar irregularidades, calcular valores pagos a mais e verificar a viabilidade de ação judicial. Em caso de êxito, os valores podem ser devolvidos com correção monetária e juros.',
   },
   {
-    title: 'Guarda e Visitas',
-    description: 'Com a separação dos pais surge a necessidade de regularizar judicialmente a guarda dos filhos, que poderá ser unilateral (materna ou paterna) ou compartilhada.',
-    items: ['Unilateral', 'Compartilhada', 'Regulamentação de Visitas'],
+    title: 'Revisão de juros de empréstimos e financiamentos de veículo',
+    description: 'Com uma análise prévia do contrato firmado com o banco ou instituição financeira, é possível identificar a existência de juros abusivos e cobranças indevidas no empréstimo ou financiamento. Confirmadas as irregularidades, é possível ingressar com ação judicial para reduzir a dívida, diminuir parcelas futuras e recuperar valores pagos a maior. Mesmo contratos já quitados ou refinanciados podem ser revisados, desde que firmados nos últimos 10 anos.',
   },
   {
-    title: 'Pensão Alimentícia',
-    description: 'A Pensão Alimentícia é o pagamento obrigatório feito para suprir as necessidades dos filhos ou do cônjuge.',
-    items: ['Fixação e Revisão', 'Cobrança', 'Exoneração', 'Alimentos Gravídicos'],
-  },
-  {
-    title: 'União Estável',
-    description: 'A união estável pode existir independente do casal na mesma casa ou de documento escrito. Mas a regularização é determinante para evitar problemas ou mal-entendidos, pois diferente do namoro, ela gera direitos e deveres recíprocos, inclusive advindos de herança.',
-    items: ['Reconhecimento', 'Dissolução', 'União em Cartório', 'Judicial'],
-  },
-  {
-    title: 'Investigação de Paternidade',
-    description: 'É um processo pelo qual um homem pode ser legalmente reconhecido como o pai de uma criança. Pode ser necessária para estabelecer direitos de visitação, para obter a custódia do filho, ou para estabelecer a obrigação do pai de fornecer suporte financeiro para o filho.',
-    items: ['Investigação', 'Reconhecimento de Paternidade', 'Reconhecimento Sócio Afetivo'],
-  },
-  {
-    title: 'Partilha de Bens',
-    description: 'Apesar do marco para apuração dos bens ser o da separação de fato, a partilha é formalizada no divórcio ou na dissolução da união estável, conforme o caso. Em caso de morte, os bens são divididos através do inventário.',
-    items: ['Partilha de Bens', 'Testamento', 'Inventário'],
+    title: 'Cartão de Reserva de Margem Consignável (RMC)',
+    description: 'O Cartão RMC é destinado a beneficiários do INSS, e frequentemente é oferecido como se fosse um empréstimo consignado comum. O consumidor acredita estar contratando um empréstimo com parcelas que quitam a dívida, quando na realidade se trata de um cartão de crédito. O valor é depositado na conta, porém o desconto mensal de 5% no benefício costuma cobrir basicamente juros e encargos, sem amortizar significativamente a dívida, que pode se tornar praticamente interminável. Quando comprovado que o cartão não foi utilizado como crédito rotativo, é possível buscar na Justiça a conversão em empréstimo consignado, com recálculo da dívida e compensação dos valores pagos.',
   },
 ];
 
 const AUTOPLAY_INTERVAL_MS = 10000;
-const MOBILE_BREAKPOINT = 768;
 
 export default function Services() {
-  const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
-  const totalPages = isMobile ? services.length : 2;
+  const totalPages = services.length;
   const [currentIndex, setCurrentIndex] = useState(0);
   const autoplayRef = useRef(null);
-  const prevMobileRef = useRef(isMobile);
-
-  useEffect(() => {
-    if (prevMobileRef.current !== isMobile) {
-      prevMobileRef.current = isMobile;
-      if (isMobile) {
-        setCurrentIndex((i) => Math.min(i * 3, services.length - 1));
-      } else {
-        setCurrentIndex((i) => Math.floor(i / 3));
-      }
-    }
-  }, [isMobile]);
 
   const goPrev = () => {
     setCurrentIndex((p) => (p === 0 ? totalPages - 1 : p - 1));
@@ -102,11 +69,6 @@ export default function Services() {
                     <div className="services__card">
                       <h4 className="services__card-title">{s.title}</h4>
                       <p className="services__card-desc">{s.description}</p>
-                      <ul className="services__card-list">
-                        {s.items.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
                     </div>
                   </article>
                 ))}

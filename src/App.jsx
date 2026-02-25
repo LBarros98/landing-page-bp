@@ -28,9 +28,6 @@ function App() {
         <Reveal variant="scale">
           <Steps />
         </Reveal>
-        <Reveal variant="slideUp">
-          <Diferenciais />
-        </Reveal>
         <Reveal variant="fadeIn">
           <Depoimentos />
         </Reveal>

@@ -5,7 +5,7 @@ export default function CTA() {
     <section className="cta-block">
       <div className="section__container cta-block__inner">
         <p className="cta-block__text">
-          Entre em contato com um especialista em Direito de Família, tire suas dúvidas e receba orientação jurídica para seu caso.
+          Entre em contato com um especialista em Direito Bancário, tire suas dúvidas e receba orientação jurídica para seu caso.
         </p>
         <a
           href={WHATSAPP_LINK}

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <p className="footer__copy">
-          © {year} VB Advocacia – Advocacia e Consultoria. Direito de Família.
+          © {year} Felipe Barcelos – Advocacia e Consultoria. Direito Bancário.
         </p>
         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="footer__whatsapp">
           Falar no WhatsApp

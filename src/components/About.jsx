@@ -8,13 +8,10 @@ export default function About() {
         <div className="about__grid">
           <div className="about__content">
             <p className="about__lead">
-              Meu nome é Vinícius da Silva Bezerra, sou advogado atuante em direito de família, entrei na faculdade de direito aos 15 anos, e aos 19 fui aprovado na OAB, me tornando o advogado mais novo do estado de Mato Grosso do Sul, e um dos mais novos do Brasil!
+            Meu nome é Felipe Barcelos, sou advogado especializado em revisão de empréstimos bancários e financiamentos de veículos. Pós-graduado em Direito Processual Civil pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS), atuo na análise técnica de contratos para identificar juros abusivos, cobranças indevidas e cláusulas contratuais irregulares, sempre com foco na redução de dívidas e na recuperação de valores pagos a maior pelo consumidor.
             </p>
-            <p>
-              Sou advogado e fundador do escritório VB advocacia, nosso escritório entende que as questões de Direito de Família são mais do que apenas disputas legais; são assuntos que afetam profundamente a vida das pessoas e suas relações familiares. Com uma dedicação inabalável a essa área do direito, nosso escritório se destaca por sua especialização e compromisso com os clientes.
-            </p>
-            <p>
-              Nossos advogados altamente qualificados e experientes são especializados em questões de Direito de Família. Nosso objetivo é fornecer orientação jurídica especializada que permita aos nossos clientes tomar decisões acertivas.
+            <p className="about__lead">
+            Muitos consumidores passam anos pagando parcelas sem perceber que estão sendo prejudicados por juros abusivos e cobranças indevidas. A sensação de que a dívida nunca diminui, mesmo com pagamentos em dia, gera angústia, insegurança e impacto direto no orçamento familiar. A revisão contratual é essencial para interromper esse ciclo, corrigir excessos e devolver ao consumidor o controle da própria vida financeira.
             </p>
           </div>
           <div className="about__image-wrap">

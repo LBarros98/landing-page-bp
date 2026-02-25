@@ -10,19 +10,15 @@ export default function Contact() {
         <div className="contact__grid">
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="contact__item">
             <span className="contact__icon">📱</span>
-            <span>(67) 9 9119-7412</span>
+            <span>(51) 9 8924-7287</span>
           </a>
           <a href="https://instagram.com/viniciusbezerra.adv" target="_blank" rel="noopener noreferrer" className="contact__item">
             <span className="contact__icon">📷</span>
-            <span>@viniciusbezerraadv</span>
+            <span>@adv.felipebarcelos</span>
           </a>
           <a href="mailto:viniciusbezerra.adv@gmail.com" className="contact__item">
             <span className="contact__icon">✉️</span>
-            <span>viniciusbezerra.adv@gmail.com</span>
-          </a>
-          <a href={MAP_LINK} target="_blank" rel="noopener noreferrer" className="contact__item">
-            <span className="contact__icon">📍</span>
-            <span>Rua Santa Helena, n. 520, Bairro Jardim Jacy, CEP 79006-380</span>
+            <span>felipebarcelosadvocacia@hotmail.com</span>
           </a>
         </div>
       </div>
