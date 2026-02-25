@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 
 const services = [
   {
-    title: 'Análise de contratos bancários:',
+    title: 'Análise de contratos bancários',
     description: 'É fundamental revisar contratos bancários assinados nos últimos 10 anos, mesmo que já estejam quitados. Muitas vezes, o consumidor pagou juros acima da média de mercado, tarifas indevidas ou foi vítima de venda casada sem sequer perceber. Com uma análise técnica especializada, é possível identificar irregularidades, calcular valores pagos a mais e verificar a viabilidade de ação judicial. Em caso de êxito, os valores podem ser devolvidos com correção monetária e juros.',
   },
   {
@@ -45,7 +45,7 @@ export default function Services() {
       <div className="section__container">
         <Reveal>
           <h2 className="section__label">Serviços</h2>
-          <h3 className="section__title">Veja como podemos te ajudar:</h3>
+          <h3 className="section__title">Veja como podemos te ajudar</h3>
         </Reveal>
 
         <Reveal className="services__carousel-wrap">
